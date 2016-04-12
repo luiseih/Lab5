@@ -33,21 +33,25 @@ The class has two instance variables of type int which together hold a state of 
 
 Code the following constructor and methods:
 
-**Constructor:**
+### Constructor
+
 2 int parameters to set the state. The state should be set via mutators.
 
-__Mutators (Setters)__
+### Mutators (Setters)
+
 setValue/setSuit should both take a single int parameter and should validate this value before using it to set their respective instance variable.
 
 They should both return a Boolean to indicate to driver code the success/failure of the set.
 
-__Accessors (Getters)__
-getValue should return a car’s current value as a String ("Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King").
+### Accessors (Getters)
+
+```getValue``` should return a car’s current value as a String ("Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King").
 
 The best way to perform the necessary translation from int to String is to use an Array of String initialised appropriately. Then use the card’s current int value as an index to look up the corresponding String in the Array.
 getSuit ... (similar to getValue)
 
-__toString__
+### toString
+
 Should return a String like “Ace of Spades”, “Five of Clubs”, “Jack of Diamonds” etc.
 
 Exercise the Card class with a driver class
